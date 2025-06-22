@@ -289,11 +289,11 @@ export default function HomeComponent() {
                 </h2>
                 <div className="max-w-3xl mx-auto text-center">
                   <p className="text-rose-700 mb-6 font-poppins">
-                    I'm Divyansha , the idea behind these handmade accessories.
-                    <br />
-                    A Hobby turned into a full-blown passion—and now, a dream
-                    come true. Every piece you see here is crafted by me, with
-                    love, patience, and a whole lot of sparkle.
+                    I&apos;m Divyansha , the idea behind these handmade
+                    accessories.
+                    <br />A Hobby turned into a full-blown passion—and now, a
+                    dream come true. Every piece you see here is crafted by me,
+                    with love, patience, and a whole lot of sparkle.
                     <br />
                     It all began with one girl, a few beads, and a handmade
                     bangle crafted lovingly for her mother.
@@ -309,28 +309,19 @@ export default function HomeComponent() {
                     women lifting each other up.
                     <br />
                     Every piece is handmade with heart, patience, and pride.
-                    We're more than just a brand—we're a sisterhood, creating
-                    beauty together and proving that you don't need a big city
-                    to chase big dreams. Thank you for being part of our
-                    journey. We can't wait to share our art with you—and the
-                    world 🌍💫
-                    {/* Welcome to Craft
-                    Trends by Aishu, where tradition meets elegance. Our journey
-                    began in the vibrant streets of Rajasthan, inspired by the
-                    rich cultural heritage and artistic craftsmanship that has
-                    been passed down through generations. */}
+                    We&apos;re more than just a brand—we&apos;re a sisterhood,
+                    creating beauty together and proving that you don&apos;t
+                    need a big city to chase big dreams. Thank you for being
+                    part of our journey. We can&apos;t wait to share our art
+                    with you—and the world 🌍💫
                   </p>
                   <p className="text-rose-700 mb-6 font-poppins">
-                    {/* Each bangle in our collection is meticulously handcrafted by
-                    skilled artisans who pour their heart and soul into creating
-                    pieces that not only adorn your wrists but also tell stories
-                    of our rich cultural heritage. */}
-                    I believe that jewelry is more than just an accessory—it's a
-                    story, a vibe, and sometimes even a mood! That's why each
-                    bangle is unique, just like the person who wears it. Whether
-                    you're dressing up for a special day or just want to add a
-                    pop of charm to your everyday style, there's something here
-                    for you.
+                    I believe that jewelry is more than just an
+                    accessory—it&apos;s a story, a vibe, and sometimes even a
+                    mood! That&apos;s why each bangle is unique, just like the
+                    person who wears it. Whether you&apos;re dressing up for a
+                    special day or just want to add a pop of charm to your
+                    everyday style, there&apos;s something here for you.
                   </p>
 
                   <p className="text-rose-700 font-poppins">
