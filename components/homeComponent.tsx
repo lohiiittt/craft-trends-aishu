@@ -21,8 +21,10 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import { Menu, Instagram, Phone, MessageCircle } from "lucide-react";
+import { Menu, Instagram, Phone } from "lucide-react";
 import { useInView } from "framer-motion";
+import { FaWhatsapp } from "react-icons/fa";
+
 
 // Dummy data for bangles collection
 const banglesCollection = [
@@ -476,7 +478,7 @@ export default function HomeComponent() {
                   rel="noopener noreferrer"
                   className="text-rose-100 hover:text-white transition-colors"
                 >
-                  <MessageCircle className="h-6 w-6" />
+                  <FaWhatsapp className="h-6 w-6" />
                   <span className="sr-only">WhatsApp</span>
                 </a>
                 <a

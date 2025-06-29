@@ -5,13 +5,14 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { Menu, Instagram, Phone, MessageCircle, ArrowLeft } from "lucide-react";
+import { Menu, Instagram, Phone, ArrowLeft } from "lucide-react";
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import { FaWhatsapp } from "react-icons/fa";
 
 // Dummy data for bangles collection (same as in home-component.tsx)
 const banglesCollection = [
@@ -130,6 +131,26 @@ export default function ProductPage({ productId }: ProductPageProps) {
       </div>
     );
   }
+
+  const createWhatsAppMessage = () => {
+    const baseUrl =
+      typeof window !== "undefined"
+        ? window.location.origin
+        : "https://crafttrends.netlify.app/";
+    const productUrl = `${baseUrl}/product/${product.id}`;
+
+    const message = `Hi! I'm interested in purchasing this beautiful bangle:
+
+🌟 *${product.title}*
+💰 Price: *${product.price}*
+🔗 Product Link: ${productUrl}
+
+Could you please provide more details about availability and shipping?
+
+Thank you! 😊`;
+
+    return encodeURIComponent(message);
+  };
 
   return (
     <div className="flex flex-col min-h-screen bg-rose-50 overflow-x-hidden w-full">
@@ -253,13 +274,13 @@ export default function ProductPage({ productId }: ProductPageProps) {
               </div>
 
               <a
-                href="https://wa.me/916378335633?text=I`m%20interested%20in%20purchasing%20this%20product%20 :"
+                href={`https://wa.me/916378335633?text=${createWhatsAppMessage()}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block"
               >
                 <Button className="bg-green-600 hover:bg-green-700 text-white px-6 py-6 rounded-md flex items-center gap-2 w-full justify-center">
-                  <MessageCircle className="h-5 w-5" />
+                  <FaWhatsapp className="h-5 w-5" />
                   <span className="font-poppins text-lg">
                     Buy Now on WhatsApp
                   </span>
@@ -333,7 +354,7 @@ export default function ProductPage({ productId }: ProductPageProps) {
                   href="#"
                   className="text-rose-100 hover:text-white transition-colors"
                 >
-                  <MessageCircle className="h-6 w-6" />
+                  <FaWhatsapp className="h-6 w-6" />
                   <span className="sr-only">WhatsApp</span>
                 </a>
                 <a
